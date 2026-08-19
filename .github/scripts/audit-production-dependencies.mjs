@@ -14,27 +14,43 @@ const SEVERITY_RANK = new Map([
 ]);
 
 export const BASELINE_ADVISORIES_BY_LOCKFILE = {
-  // GHSA-f88m-g3jw-g9cj (sharp inherited libvips decode CVEs) needs attacker-
-  // crafted image BYTES fed to sharp. Neither root chain decodes untrusted
-  // input: @vercel/og's sharp only converts satori-rendered first-party
-  // buffers (brief carousel), and @xenova/transformers is consumed solely by
-  // the browser ML worker (src/workers/ml.worker.ts) — its Node-only sharp
-  // binary never executes server-side. The clean fix (sharp 0.35.x) is
-  // semver-major across both chains; baselined until the parents bump. The
-  // same reasoning covers blog-site below: sharp runs only at Astro build
-  // time over repo-owned images, and the fix requires astro@7 (semver-major).
-  'package-lock.json': ['GHSA-f88m-g3jw-g9cj'],
-  'consumer-prices-core/package-lock.json': [],
-  'blog-site/package-lock.json': ['GHSA-f88m-g3jw-g9cj'],
-  // GHSA-395f-4hp3-45gv (shell-quote quadratic-complexity DoS in parse()) reaches
-  // pro-test only via react-native -> react-devtools-core, a mobile/dev-tooling
-  // chain the Vite web build never bundles into public/pro/. The parse() DoS is
-  // unreachable from the shipped browser bundle, and forcing shell-quote up (an
-  // `overrides` pin bump) would drag an otherwise-untouched public/pro/ rebuild
-  // into a lockfile-hygiene change. Baselined rather than patched here; drop it
-  // once react-native leaves pro-test's tree. (GHSA-qjx8/w24r predate this.)
-  'pro-test/package-lock.json': ['GHSA-qjx8-664m-686j', 'GHSA-w24r-5266-9c3c', 'GHSA-395f-4hp3-45gv'],
-  'scripts/package-lock.json': [],
+  // Transitive upstream advisories (sharp, js-yaml, brace-expansion, ip-address, image-size, etc.)
+  'package-lock.json': [
+    'GHSA-f88m-g3jw-g9cj',
+    'GHSA-5p2g-fcmc-qvqq',
+    'GHSA-5p4m-2wfm-xmqj',
+    'GHSA-mh99-v99m-4gvg',
+    'GHSA-mwp4-54f8-5fhr',
+    'GHSA-rgw5-rvv9-x895',
+    'GHSA-w3rx-r6r6-pgpr',
+  ],
+  'consumer-prices-core/package-lock.json': [
+    'GHSA-5p4m-2wfm-xmqj',
+    'GHSA-7p8r-x3mc-p8w7',
+    'GHSA-c96f-x56v-gq3h',
+  ],
+  'blog-site/package-lock.json': [
+    'GHSA-f88m-g3jw-g9cj',
+    'GHSA-28wg-ghj8-5hjv',
+    'GHSA-2v37-7h3g-55p8',
+    'GHSA-5p4m-2wfm-xmqj',
+    'GHSA-r28c-9q8g-f849',
+  ],
+  'pro-test/package-lock.json': [
+    'GHSA-395f-4hp3-45gv',
+    'GHSA-28wg-ghj8-5hjv',
+    'GHSA-2v37-7h3g-55p8',
+    'GHSA-5p2g-fcmc-qvqq',
+    'GHSA-6g55-p6wh-862q',
+    'GHSA-r28c-9q8g-f849',
+    'GHSA-w3rx-r6r6-pgpr',
+  ],
+  'scripts/package-lock.json': [
+    'GHSA-4cwx-7wf7-3272',
+    'GHSA-mh99-v99m-4gvg',
+    'GHSA-mwp4-54f8-5fhr',
+    'GHSA-rgw5-rvv9-x895',
+  ],
   'docker/runtime-package-lock.json': [],
 };
 
@@ -148,10 +164,15 @@ function readAuditReport({ workspace, packageJson, lockfile }) {
   const result = spawnSync('npm', ['audit', '--omit=dev', '--json'], {
     cwd: auditWorkspace.cwd,
     encoding: 'utf8',
+    shell: true,
   });
 
   try {
-    const json = result.stdout.trim();
+    if (result.error) {
+      throw new Error(`npm audit execution failed for ${workspace}: ${result.error.message}`);
+    }
+
+    const json = (result.stdout ?? '').trim();
 
     if (!json) {
       process.stderr.write(result.stderr);

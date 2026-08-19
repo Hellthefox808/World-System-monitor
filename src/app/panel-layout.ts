@@ -31,6 +31,7 @@ import {
   SITE_VARIANT,
   ALL_PANELS,
   VARIANT_DEFAULTS,
+  BRAND_CONFIG,
   isPanelInVariantDefaults,
   getEffectivePanelConfig,
   isPanelEntitled,

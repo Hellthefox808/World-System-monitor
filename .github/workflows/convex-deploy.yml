@@ -86,7 +86,7 @@ jobs:
 
   deploy:
     needs: changes
-    if: needs.changes.outputs.convex == 'true'
+    if: needs.changes.outputs.convex == 'true' && secrets.CONVEX_DEPLOY_KEY != ''
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
