@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Primary Meta Tags -->
+    <title>RAVI MONITOR - Real-Time Global Intelligence Dashboard</title>
+    <meta name="title" content="RAVI MONITOR - Real-Time Global Intelligence Dashboard" />
+    <meta name="description" content="Real-time global intelligence platform. Conflicts, markets, military, OSINT, and infrastructure monitoring in one view." />
+    <meta name="keywords" content="AI intelligence, AI-powered dashboard, global intelligence, geopolitical dashboard, world news, market data, military bases, nuclear facilities, undersea cables, conflict zones, real-time monitoring, situation awareness, OSINT, flight tracking, AIS ships, earthquake monitor, protest tracker, power outages, oil prices, government spending, polymarket predictions" />
+    <meta name="author" content="Ravi" />
+    <meta name="theme-color" content="#0a0f0a" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.worldmonitor.app/dashboard" />
+    <link rel="alternate" hreflang="x-default" href="https://www.worldmonitor.app/dashboard" />
+    <link rel="alternate" hreflang="en" href="https://www.worldmonitor.app/dashboard" />
+    <link rel="alternate" hreflang="ar" href="https://www.worldmonitor.app/dashboard?lang=ar" />
+    <link rel="alternate" hreflang="bg" href="https://www.worldmonitor.app/dashboard?lang=bg" />
+    <link rel="alternate" hreflang="cs" href="https://www.worldmonitor.app/dashboard?lang=cs" />
+    <link rel="alternate" hreflang="de" href="https://www.worldmonitor.app/dashboard?lang=de" />
+    <link rel="alternate" hreflang="el" href="https://www.worldmonitor.app/dashboard?lang=el" />
+    <link rel="alternate" hreflang="es" href="https://www.worldmonitor.app/dashboard?lang=es" />
+    <link rel="alternate" hreflang="fa" href="https://www.worldmonitor.app/dashboard?lang=fa" />
+    <link rel="alternate" hreflang="fr" href="https://www.worldmonitor.app/dashboard?lang=fr" />
+    <link rel="alternate" hreflang="hi" href="https://www.worldmonitor.app/dashboard?lang=hi" />
+    <link rel="alternate" hreflang="hr" href="https://www.worldmonitor.app/dashboard?lang=hr" />
+    <link rel="alternate" hreflang="hu" href="https://www.worldmonitor.app/dashboard?lang=hu" />
+    <link rel="alternate" hreflang="it" href="https://www.worldmonitor.app/dashboard?lang=it" />
+    <link rel="alternate" hreflang="ja" href="https://www.worldmonitor.app/dashboard?lang=ja" />
+    <link rel="alternate" hreflang="ko" href="https://www.worldmonitor.app/dashboard?lang=ko" />
+    <link rel="alternate" hreflang="nl" href="https://www.worldmonitor.app/dashboard?lang=nl" />
+    <link rel="alternate" hreflang="pl" href="https://www.worldmonitor.app/dashboard?lang=pl" />
+    <link rel="alternate" hreflang="pt" href="https://www.worldmonitor.app/dashboard?lang=pt" />
+    <link rel="alternate" hreflang="ro" href="https://www.worldmonitor.app/dashboard?lang=ro" />
+    <link rel="alternate" hreflang="ru" href="https://www.worldmonitor.app/dashboard?lang=ru" />
+    <link rel="alternate" hreflang="sv" href="https://www.worldmonitor.app/dashboard?lang=sv" />
+    <link rel="alternate" hreflang="th" href="https://www.worldmonitor.app/dashboard?lang=th" />
+    <link rel="alternate" hreflang="tr" href="https://www.worldmonitor.app/dashboard?lang=tr" />
+    <link rel="alternate" hreflang="vi" href="https://www.worldmonitor.app/dashboard?lang=vi" />
+    <link rel="alternate" hreflang="zh" href="https://www.worldmonitor.app/dashboard?lang=zh" />
+
+    <!-- Additional Search Discovery -->
+    <meta name="application-name" content="RAVI MONITOR" />
+    <meta name="subject" content="AI-Powered Global Intelligence and Situation Awareness" />
+    <meta name="classification" content="AI Intelligence Dashboard, OSINT Tool, News Aggregator" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.worldmonitor.app/dashboard" />
+    <meta property="og:title" content="RAVI MONITOR - Real-Time Global Intelligence Dashboard" />
+    <meta property="og:description" content="Real-time global intelligence platform. Conflicts, markets, military, OSINT in one view." />
+    <meta property="og:image" content="https://www.worldmonitor.app/favico/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RAVI MONITOR — real-time global intelligence dashboard with 3D globe, live markets, geopolitical data, and infrastructure monitoring" />
+    <meta property="og:site_name" content="RAVI MONITOR" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.worldmonitor.app/dashboard" />
+    <meta name="twitter:title" content="RAVI MONITOR - Real-Time Global Intelligence Dashboard" />
+    <meta name="twitter:description" content="Real-time global intelligence platform. Conflicts, markets, military, OSINT in one view." />
+    <meta name="twitter:image" content="https://www.worldmonitor.app/favico/og-image.png" />
+    <meta name="twitter:site" content="@worldmonitorai" />
+    <meta name="twitter:creator" content="@worldmonitorai" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "World Monitor",
+      "alternateName": ["WorldMonitor", "World Monitor App", "WM Intelligence"],
+      "url": "https://www.worldmonitor.app/dashboard",
+      "description": "Open-source real-time global intelligence dashboard aggregating conflicts, military movements, markets, infrastructure, and geopolitical data. Used by 2M+ people across 190+ countries. Featured in WIRED.",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Web, Windows, macOS, Linux",
+      "offers": [
+        { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free", "description": "Full dashboard with 500+ news feeds, 65+ external data sources, 56 map layer types, BYOK AI" },
+        { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Pro (Waitlist)", "url": "https://www.worldmonitor.app/pro" }
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Elie Habib",
+        "url": "https://x.com/eliehabib",
+        "jobTitle": "CEO",
+        "sameAs": ["https://x.com/eliehabib", "https://github.com/koala73", "https://www.linkedin.com/in/elie-habib-7047b931", "https://www.wikidata.org/wiki/Q121365724", "https://www.crunchbase.com/person/elie-habib-2"]
+      },
+      "featureList": [
+        "Real-time conflict tracking (ACLED, UCDP)",
+        "Military ADS-B flight monitoring",
+        "Maritime AIS ship tracking and dark vessel detection",
+        "NASA FIRMS satellite fire detection",
+        "Nuclear installation and critical infrastructure mapping",
+        "Submarine cable and internet outage monitoring",
+        "GPS jamming zone detection",
+        "AI-powered intelligence synthesis and briefs",
+        "Country Instability Index (CII) scoring",
+        "Stock market, commodity, and crypto tracking",
+        "Earthquake and natural disaster alerts",
+        "Civil unrest and protest monitoring",
+        "Cyber threat and BGP anomaly detection",
+        "500+ curated RSS news feeds and 65+ external data sources (ACLED, UCDP, NASA FIRMS, USGS, USPTO, FRED, IMF, BIS, OFAC, ECMWF, IAEA, WHO, OpenSky, ADS-B Exchange, and more)",
+        "25 language support with RTL"
+      ],
+      "screenshot": "https://www.worldmonitor.app/favico/og-image.png",
+      "sameAs": [
+        "https://github.com/koala73/worldmonitor",
+        "https://www.npmjs.com/package/worldmonitor",
+        "https://x.com/worldmonitorai",
+        "https://x.com/eliehabib",
+        "https://www.wired.com/story/world-monitor-elie-habib/"
+      ],
+      "keywords": "OSINT dashboard, geopolitical monitoring, real-time intelligence, conflict tracker, threat intelligence, ADS-B tracking, AIS ship tracking, global risk monitoring, situational awareness"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "World Monitor",
+      "alternateName": "WorldMonitor",
+      "url": "https://www.worldmonitor.app/",
+      "logo": "https://www.worldmonitor.app/favico/apple-touch-icon.png",
+      "description": "Open-source real-time global intelligence platform aggregating conflicts, military movements, markets, infrastructure, and geopolitical data. Used by 2M+ people across 190+ countries.",
+      "founder": {
+        "@type": "Person",
+        "name": "Elie Habib",
+        "url": "https://x.com/eliehabib",
+        "sameAs": ["https://x.com/eliehabib", "https://github.com/koala73", "https://www.linkedin.com/in/elie-habib-7047b931", "https://www.wikidata.org/wiki/Q121365724", "https://www.crunchbase.com/person/elie-habib-2"]
+      },
+      "sameAs": [
+        "https://github.com/koala73/worldmonitor",
+        "https://www.npmjs.com/package/worldmonitor",
+        "https://x.com/worldmonitorai",
+        "https://discord.gg/re63kWKxaz",
+        "https://www.wired.com/story/world-monitor-elie-habib/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@worldmonitor.app",
+        "url": "https://www.worldmonitor.app/pro"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "World Monitor",
+      "alternateName": "WorldMonitor",
+      "url": "https://www.worldmonitor.app/",
+      "description": "Real-time global intelligence dashboard — live news, markets, military tracking, infrastructure monitoring, and geopolitical data.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "World Monitor",
+        "url": "https://www.worldmonitor.app/"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.worldmonitor.app/dashboard?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": ["en", "fr", "de", "es", "fa", "it", "pt", "nl", "sv", "pl", "cs", "ro", "bg", "el", "hi", "hr", "hu", "ru", "tr", "ar", "zh", "ja", "ko", "th", "vi"]
+    }
+    </script>
+
+    <!--
+      Umami Analytics loads from the SPA after first paint/idle (not the document
+      head) so a slow/down abacus origin cannot contend with the initial dashboard
+      shell. Script src, website id, and the #4183 data-domains workaround now live
+      in src/services/analytics.ts (UMAMI_DOMAINS) — the single source of truth.
+    -->
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favico/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favico/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favico/apple-touch-icon.png" />
+
+
+    <!-- Theme: apply stored preference before first paint to prevent FOUC.
+         Also tags <html> with .js so the seo-prerender content (visible body
+         text for AEO/SEO crawlers) is hidden for JS-enabled clients via the
+         .js #seo-prerender CSS rule below. Crawlers that don't execute JS
+         (the typical AEO scanner) see the prerender content as normal body
+         content — width:1px/height:1px or aria-hidden cause content-extraction
+         libraries to discount the block, so we make it crawler-visible by
+         default and CSS-hide for real users. -->
+    <script data-wm-prepaint>(function(){try{var h=location.hostname;var v;if(h.startsWith('happy.'))v='happy';else if(h.startsWith('tech.'))v='tech';else if(h.startsWith('finance.'))v='finance';else if(h.startsWith('commodity.'))v='commodity';else if(h.startsWith('energy.'))v='energy';if(!v&&(h==='localhost'||h==='127.0.0.1'||'__TAURI_INTERNALS__' in window))v=localStorage.getItem('worldmonitor-variant');if(v)document.documentElement.dataset.variant=v;else document.documentElement.removeAttribute('data-variant');var t=localStorage.getItem('worldmonitor-theme');if(t==='dark'||t==='light'){document.documentElement.dataset.theme=t;}else if(v==='happy'){document.documentElement.dataset.theme='light';}var mapCollapsed=localStorage.getItem('mobile-map-collapsed')==='true';if(mapCollapsed)document.documentElement.classList.add('wm-map-collapsed');var dismissKey='wm-pro-banner-launched-dismissed';var legacyDismissKey='wm-pro-banner-dismissed';localStorage.removeItem(legacyDismissKey);var ts=Number(localStorage.getItem(dismissKey)||0);var dismissed=ts>0&&Date.now()-ts<=604800000;if(ts>0&&!dismissed)localStorage.removeItem(dismissKey);if(window.self===window.top&&!dismissed)document.documentElement.classList.add('wm-pro-banner-reserved');}catch(e){}document.documentElement.classList.add('no-transition');document.documentElement.classList.add('js');})()</script>
+    <style>html.js #seo-prerender{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden}</style>
+
+    <!-- Critical CSS: inline skeleton visible before JS boots -->
+    <style>
+      :root{--wm-pro-banner-slot-height:40px;--dashboard-panel-row-min:200px;--dashboard-panel-row-max:380px;--dashboard-grid-gap:4px;--dashboard-first-grid-reservation:calc(var(--dashboard-panel-row-min) + var(--dashboard-panel-row-min) + var(--dashboard-grid-gap))}
+      html,body{margin:0;height:100%;width:100%;overflow:hidden;background:#0a0a0a}
+      html.wm-pro-banner-reserved #app::before{content:'';display:block;height:var(--wm-pro-banner-slot-height);flex:0 0 var(--wm-pro-banner-slot-height);background:#141414;border-bottom:1px solid #2a2a2a;box-sizing:border-box}
+      html.wm-pro-banner-reserved.wm-layout-hydrated #app::before{content:none;display:none}
+      .pro-banner-slot{flex:0 0 auto;min-height:0;box-sizing:border-box}
+      html.wm-pro-banner-reserved .pro-banner-slot{min-height:var(--wm-pro-banner-slot-height)}
+      .pro-banner-slot .pro-banner{box-sizing:border-box;min-height:var(--wm-pro-banner-slot-height);width:100%}
+      #country-deep-dive-panel.country-deep-dive[aria-hidden="true"]{position:fixed;top:0;right:0;width:430px;height:100vh;visibility:hidden;z-index:5000;box-sizing:border-box;transform:translateX(calc(100% + 30px));contain:layout paint}
+      @media (max-width:767px){#country-deep-dive-panel.country-deep-dive[aria-hidden="true"]{width:100vw;transform:translateX(100%)}}
+      [data-theme="light"].wm-pro-banner-reserved #app::before{background:#fff;border-bottom-color:#d4d4d4}
+      [data-variant="happy"].wm-pro-banner-reserved #app::before{background:#fff;border-bottom-color:#DDD9CF}
+      [data-variant="happy"][data-theme="dark"].wm-pro-banner-reserved #app::before{background:#222E3E;border-bottom-color:#344050}
+      html:not(.js),html:not(.js) body{height:auto;min-height:100%;overflow:auto}
+      html:not(.js) body > .app-heading{display:none}
+      html:not(.js) #app .skeleton-shell{display:none}
+      .app-heading{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+      /* ---------- skeleton shell (dark default) ---------- */
+      .skeleton-shell{display:flex;flex-direction:column;height:100vh;background:#0a0a0a;font-family:'SF Mono','Monaco','Cascadia Code','Fira Code','DejaVu Sans Mono','Liberation Mono',monospace;overflow:hidden}
+      .skeleton-shell *{box-sizing:border-box}
+      html.wm-pro-banner-reserved .skeleton-shell{height:calc(100vh - var(--wm-pro-banner-slot-height))}
+      .skeleton-header{display:flex;align-items:center;justify-content:space-between;height:40px;padding:8px 16px;background:#141414;border-bottom:1px solid #2a2a2a;flex-shrink:0}
+      .skeleton-header-left{display:flex;align-items:center;gap:12px}
+      .skeleton-header-right{display:flex;align-items:center;gap:12px}
+      .skeleton-brand{display:flex;align-items:center;gap:8px;margin:0;color:#f5f5f5;font-size:14px;line-height:1;font-weight:800}
+      .skeleton-brand-mark{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border:1px solid #2f8f68;border-radius:50%;color:#4ade80;font-size:12px;line-height:1}
+      .skeleton-kicker{color:#9ca3af;font-size:11px;line-height:1;white-space:nowrap}
+      .skeleton-chip{display:inline-flex;align-items:center;min-height:22px;padding:0 8px;border:1px solid #2a2a2a;border-radius:4px;color:#d1d5db;background:#181818;font-size:11px;line-height:1;white-space:nowrap}
+      .skeleton-chip.live{color:#86efac;border-color:#14532d;background:#062317}
+      .skeleton-pill{height:24px;border-radius:4px;background:#1e1e1e}
+      .skeleton-dot{width:8px;height:8px;border-radius:50%;background:#0f5040}
+      .skeleton-tabs{height:36px;background:#141414;border-bottom:1px solid #2a2a2a;flex-shrink:0}
+      .skeleton-main{flex:1;display:flex;flex-direction:column;overflow:hidden;background:#0a0a0a}
+      .skeleton-map{height:50vh;min-height:350px;border:1px solid #2a2a2a;background:#020a08;display:flex;flex-direction:column;flex-shrink:0}
+      .skeleton-map-bar{height:32px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 12px;background:#141414;border-bottom:1px solid #2a2a2a}
+      .skeleton-section-label{color:#f5f5f5;font-size:12px;line-height:1;font-weight:700;white-space:nowrap}
+      .skeleton-section-note{color:#9ca3af;font-size:11px;line-height:1;white-space:nowrap}
+      .skeleton-map-body{flex:1;position:relative;overflow:hidden}
+      .skeleton-map-body::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,#0a2a20 0%,#020a08 100%);opacity:.5}
+      .skeleton-map-content{position:relative;z-index:1;display:flex;flex-direction:column;gap:10px;max-width:560px;margin:32px;padding:22px;border:1px solid rgba(74,222,128,.24);background:rgba(5,12,10,.78);box-shadow:0 18px 60px rgba(0,0,0,.24)}
+      .skeleton-map-eyebrow{margin:0;color:#86efac;font-size:12px;line-height:1.2;font-weight:700}
+      .skeleton-map-title{margin:0;color:#f8fafc;font-size:28px;line-height:1.12;font-weight:800}
+      .skeleton-map-copy{margin:0;max-width:52ch;color:#d1d5db;font-size:14px;line-height:1.5}
+      .skeleton-map-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+      .skeleton-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));grid-auto-flow:row dense;grid-auto-rows:minmax(var(--dashboard-panel-row-min),var(--dashboard-panel-row-max));gap:var(--dashboard-grid-gap);padding:var(--dashboard-grid-gap);align-content:start}
+      .skeleton-panel{height:100%;min-height:var(--dashboard-panel-row-min);background:#141414;border:1px solid #2a2a2a;border-radius:0;display:flex;flex-direction:column}
+      .skeleton-panel:first-child{grid-column:span 2;grid-row:span 2;min-height:var(--dashboard-first-grid-reservation)}
+      .skeleton-panel-header{height:36px;display:flex;align-items:center;padding:0 12px;border-bottom:1px solid #1a1a1a}
+      .skeleton-panel-title{margin:0;color:#f5f5f5;font-size:12px;line-height:1;font-weight:700}
+      .skeleton-panel-body{flex:1;padding:12px;display:flex;flex-direction:column;gap:10px}
+      .skeleton-panel-kicker{margin:0;color:#86efac;font-size:11px;line-height:1.3;font-weight:700}
+      .skeleton-panel-copy{margin:0;color:#d1d5db;font-size:13px;line-height:1.45}
+      .skeleton-panel-metric{display:flex;align-items:baseline;gap:8px;margin-top:auto;color:#f8fafc}
+      .skeleton-panel-metric strong{font-size:26px;line-height:1;font-weight:800}
+      .skeleton-panel-metric span{color:#9ca3af;font-size:11px;line-height:1.2}
+      .skeleton-line{height:14px;border-radius:4px;background:linear-gradient(90deg,rgba(255,255,255,.05) 25%,rgba(255,255,255,.1) 50%,rgba(255,255,255,.05) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
+      .skeleton-line.w75{width:75%}.skeleton-line.w60{width:60%}.skeleton-line.w50{width:50%}.skeleton-line.w85{width:85%}.skeleton-line.w40{width:40%}
+
+      @keyframes skel-shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+      /* ---------- skeleton shell (light theme) ---------- */
+      [data-theme="light"] .skeleton-shell{background:#f8f9fa}
+      [data-theme="light"] .skeleton-header{background:#fff;border-bottom-color:#d4d4d4}
+      [data-theme="light"] .skeleton-brand{color:#111827}
+      [data-theme="light"] .skeleton-kicker{color:#4b5563}
+      [data-theme="light"] .skeleton-chip{color:#374151;background:#f7f7f7;border-color:#d4d4d4}
+      [data-theme="light"] .skeleton-chip.live{color:#166534;background:#dcfce7;border-color:#86efac}
+      [data-theme="light"] .skeleton-pill{background:#f0f0f0}
+      [data-theme="light"] .skeleton-dot{background:#16a34a}
+      [data-theme="light"] .skeleton-tabs{background:#fff;border-bottom-color:#d4d4d4}
+      [data-theme="light"] .skeleton-main{background:#f8f9fa}
+      [data-theme="light"] .skeleton-map{border-color:#d4d4d4;background:#e8f0f8}
+      [data-theme="light"] .skeleton-map-bar{background:#fff;border-bottom-color:#d4d4d4}
+      [data-theme="light"] .skeleton-section-label{color:#111827}
+      [data-theme="light"] .skeleton-section-note{color:#4b5563}
+      [data-theme="light"] .skeleton-map-body::after{background:radial-gradient(ellipse 60% 50% at 50% 50%,#b0c8d8 0%,#e8f0f8 100%)}
+      [data-theme="light"] .skeleton-map-content{border-color:rgba(22,101,52,.2);background:rgba(255,255,255,.86);box-shadow:0 18px 60px rgba(15,23,42,.12)}
+      [data-theme="light"] .skeleton-map-eyebrow{color:#166534}
+      [data-theme="light"] .skeleton-map-title{color:#111827}
+      [data-theme="light"] .skeleton-map-copy{color:#374151}
+      [data-theme="light"] .skeleton-panel{background:#fff;border-color:#d4d4d4}
+      [data-theme="light"] .skeleton-panel-header{border-bottom-color:#e8e8e8}
+      [data-theme="light"] .skeleton-panel-title{color:#111827}
+      [data-theme="light"] .skeleton-panel-kicker{color:#166534}
+      [data-theme="light"] .skeleton-panel-copy{color:#374151}
+      [data-theme="light"] .skeleton-panel-metric{color:#111827}
+      [data-theme="light"] .skeleton-panel-metric span{color:#4b5563}
+      [data-theme="light"] .skeleton-line{background:linear-gradient(90deg,rgba(0,0,0,.04) 25%,rgba(0,0,0,.08) 50%,rgba(0,0,0,.04) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
+
+      /* ---------- skeleton shell (happy variant — light) ---------- */
+      [data-variant="happy"] .skeleton-shell{background:#FAFAF5;font-family:'Nunito',system-ui,sans-serif}
+      [data-variant="happy"] .skeleton-header{background:#FFFFFF;border-bottom-color:#DDD9CF}
+      [data-variant="happy"] .skeleton-brand{color:#24301f}
+      [data-variant="happy"] .skeleton-brand-mark{border-color:#6B8F5E;color:#6B8F5E}
+      [data-variant="happy"] .skeleton-kicker{color:#64705d}
+      [data-variant="happy"] .skeleton-chip{color:#3f4f36;background:#F2EFE8;border-color:#DDD9CF;border-radius:8px}
+      [data-variant="happy"] .skeleton-chip.live{color:#2f612e;background:#eef6e9;border-color:#b9cda8}
+      [data-variant="happy"] .skeleton-pill{background:#F2EFE8;border-radius:8px}
+      [data-variant="happy"] .skeleton-dot{background:#6B8F5E}
+      [data-variant="happy"] .skeleton-tabs{background:#FFFFFF;border-bottom-color:#DDD9CF}
+      [data-variant="happy"] .skeleton-main{background:#FAFAF5}
+      [data-variant="happy"] .skeleton-map{border-color:#DDD9CF;background:#D4E6EC;border-radius:14px}
+      [data-variant="happy"] .skeleton-map-bar{background:#FFFFFF;border-bottom-color:#DDD9CF}
+      [data-variant="happy"] .skeleton-section-label{color:#24301f}
+      [data-variant="happy"] .skeleton-section-note{color:#64705d}
+      [data-variant="happy"] .skeleton-map-body::after{background:radial-gradient(ellipse 60% 50% at 50% 50%,#B9CDA8 0%,#D4E6EC 100%);opacity:.3}
+      [data-variant="happy"] .skeleton-map-content{border-color:rgba(107,143,94,.24);background:rgba(255,255,255,.84);box-shadow:0 18px 60px rgba(61,80,50,.12);border-radius:12px}
+      [data-variant="happy"] .skeleton-map-eyebrow{color:#4f7f3f}
+      [data-variant="happy"] .skeleton-map-title{color:#24301f}
+      [data-variant="happy"] .skeleton-map-copy{color:#3f4f36}
+      [data-variant="happy"] .skeleton-panel{background:#FFFFFF;border-color:#DDD9CF;border-radius:14px}
+      [data-variant="happy"] .skeleton-panel-header{border-bottom-color:#EBE8E0}
+      [data-variant="happy"] .skeleton-panel-title{color:#24301f}
+      [data-variant="happy"] .skeleton-panel-kicker{color:#4f7f3f}
+      [data-variant="happy"] .skeleton-panel-copy{color:#3f4f36}
+      [data-variant="happy"] .skeleton-panel-metric{color:#24301f}
+      [data-variant="happy"] .skeleton-panel-metric span{color:#64705d}
+      [data-variant="happy"] .skeleton-line{background:linear-gradient(90deg,rgba(107,143,94,.06) 25%,rgba(107,143,94,.12) 50%,rgba(107,143,94,.06) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
+
+      /* ---------- skeleton shell (happy variant — dark) ---------- */
+      [data-variant="happy"][data-theme="dark"] .skeleton-shell{background:#1A2332}
+      [data-variant="happy"][data-theme="dark"] .skeleton-header{background:#222E3E;border-bottom-color:#344050}
+      [data-variant="happy"][data-theme="dark"] .skeleton-brand{color:#F7FAF3}
+      [data-variant="happy"][data-theme="dark"] .skeleton-kicker{color:#B9C4B0}
+      [data-variant="happy"][data-theme="dark"] .skeleton-chip{color:#E7EDE0;background:#2A3848;border-color:#344050}
+      [data-variant="happy"][data-theme="dark"] .skeleton-chip.live{color:#C9F2B8;background:#243A2D;border-color:#456449}
+      [data-variant="happy"][data-theme="dark"] .skeleton-pill{background:#2A3848}
+      [data-variant="happy"][data-theme="dark"] .skeleton-dot{background:#8BAF7A}
+      [data-variant="happy"][data-theme="dark"] .skeleton-tabs{background:#222E3E;border-bottom-color:#344050}
+      [data-variant="happy"][data-theme="dark"] .skeleton-main{background:#1A2332}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map{border-color:#344050;background:#16202E}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-bar{background:#222E3E;border-bottom-color:#344050}
+      [data-variant="happy"][data-theme="dark"] .skeleton-section-label{color:#F7FAF3}
+      [data-variant="happy"][data-theme="dark"] .skeleton-section-note{color:#B9C4B0}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-body::after{background:radial-gradient(ellipse 60% 50% at 50% 50%,#2D4035 0%,#16202E 100%);opacity:.3}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-content{border-color:rgba(139,175,122,.24);background:rgba(24,33,45,.82);box-shadow:0 18px 60px rgba(0,0,0,.24)}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-eyebrow{color:#C9F2B8}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-title{color:#F7FAF3}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-copy{color:#E7EDE0}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel{background:#222E3E;border-color:#344050}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel-header{border-bottom-color:#283545}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel-title{color:#F7FAF3}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel-kicker{color:#C9F2B8}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel-copy{color:#E7EDE0}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel-metric{color:#F7FAF3}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel-metric span{color:#B9C4B0}
+      [data-variant="happy"][data-theme="dark"] .skeleton-line{background:linear-gradient(90deg,rgba(139,175,122,.05) 25%,rgba(139,175,122,.10) 50%,rgba(139,175,122,.05) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
+
+      @media (max-width:768px){
+        .skeleton-header{height:40px;padding:6px 10px;gap:8px}
+        .skeleton-header-left,.skeleton-header-right{gap:8px;min-width:0}
+        .skeleton-kicker,.skeleton-section-note{display:none}
+        .skeleton-chip{padding:0 6px;font-size:10px}
+        /* Mirror the real full-viewport mobile map (.map-section @ max-width:768px in
+           main.css): the skeleton previously reserved 50vh (~422px) while the hydrated
+           map is calc(100dvh - 48px) (~796px), shoving #panelsGrid down ~374px on the
+           skeleton->app swap (#4580 item a, largest mobile CLS offender). Keep the
+           100vh fallback first for pre-dvh browsers, same order as the real rule. */
+        .skeleton-map{height:calc(100vh - 48px);height:calc(100dvh - 48px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));min-height:60vh;max-height:100dvh}
+        /* Match .main-content .map-section.collapsed: users who collapsed the mobile
+           map previously should not reserve the expanded map before hydration. */
+        html.wm-map-collapsed .skeleton-map{height:auto;min-height:0;max-height:none}
+        /* The hydrated collapsed map keeps its 47px header plus the section borders.
+           Hide the loading card too: otherwise its intrinsic height still shifts panels. */
+        html.wm-map-collapsed .skeleton-map-bar{height:47px}
+        html.wm-map-collapsed .skeleton-map-body{display:none}
+        /* #5159 NOTE: do NOT try to pre-paint-collapse the REAL .map-section from
+           here. main.css sets its expanded height with !important inside a cascade
+           layer, and for !important declarations LAYERED beats UNLAYERED — the
+           inverse of the normal-declaration rule this critical CSS relies on. The
+           real section is instead CREATED with .collapsed already present
+           (panel-layout.ts renderLayout template), so the runtime rule applies from
+           its first frame. */
+        .skeleton-map-content{max-width:calc(100% - 24px);margin:12px;padding:16px}
+        .skeleton-map-title{font-size:22px;line-height:1.15}
+        .skeleton-map-copy{font-size:13px;line-height:1.42}
+        .skeleton-grid{grid-template-columns:1fr}
+        .skeleton-panel:first-child{grid-column:span 1;grid-row:span 1;min-height:var(--dashboard-panel-row-min)}
+        .skeleton-panel:nth-child(n+5){display:none}
+      }
+    </style>
+
+    <!-- Preconnect: critical first-paint origins.
+         api.worldmonitor.app: credentialed CORS (runtime.ts defaults
+         credentials: 'include') — must use `use-credentials` so the
+         pre-opened socket lands in the same connection pool as the
+         credentialed fetches. Sentry and Clerk are deferred by their
+         runtime loaders, so they intentionally do not get head preconnects. -->
+    <link rel="preconnect" href="https://api.worldmonitor.app" crossorigin="use-credentials">
+
+    <!-- Preconnect: map tiles + assets -->
+    <link rel="preconnect" href="https://maps.worldmonitor.app" crossorigin>
+
+    <!-- Variant/locale fonts are narrowed and loaded after the dashboard paints. -->
+  </head>
+  <body>
+    <h1 class="app-heading">RAVI MONITOR — Real-Time Global Intelligence Dashboard</h1>
+    <!--
+      Canonical English crawler content. The SPA is multilingual (25 locales) but
+      this prerender block is the indexable surface — language-specific content
+      hydrates client-side after JS boots. WebSite JSON-LD already advertises all
+      inLanguage values; this block is the en-US fallback.
+
+      Visible to no-JS crawlers (AEO scanners typically don't execute JS); hidden
+      to JS-enabled clients via `html.js #seo-prerender` rule in head <style>.
+      Off-screen-with-1px-size and aria-hidden=true caused content-extraction
+      libraries to discount the block — the AEO scanner showed 0/18 internal
+      links until this switch.
+    -->
+    <div id="seo-prerender" lang="en">
+      <h2>RAVI MONITOR — Real-Time Global Intelligence Dashboard</h2>
+      <p>Free, open-source intelligence platform aggregating live news, markets, military movements, conflicts, and infrastructure into one real-time dashboard. Derived from World Monitor by Elie Habib.</p>
+
+      <h2>What it tracks</h2>
+      <p>Live conflict events from <a href="https://acleddata.com/">ACLED</a> and <a href="https://ucdp.uu.se/">UCDP</a>, satellite fire detection from <a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a>, earthquakes from <a href="https://www.usgs.gov/programs/earthquake-hazards">USGS</a>, military and civilian aircraft from <a href="https://opensky-network.org/">OpenSky Network</a>, ship AIS positions from <a href="https://aisstream.io/">AISStream</a>, macro and central bank data from <a href="https://fred.stlouisfed.org/">FRED</a>, <a href="https://www.imf.org/en/Data">IMF</a>, and <a href="https://www.bis.org/">BIS</a>, plus 500+ curated RSS feeds, 56 map layer types, and AI-synthesized country briefings.</p>
+
+      <h2>Six dashboards, one platform</h2>
+      <ul>
+        <li><a href="https://www.worldmonitor.app/dashboard">RAVI MONITOR</a> — geopolitics, conflicts, military, infrastructure</li>
+        <li><a href="https://tech.worldmonitor.app/">RAVI Tech Monitor</a> — AI labs, startups, cloud, cybersecurity</li>
+        <li><a href="https://finance.worldmonitor.app/">RAVI Finance Monitor</a> — global markets, central banks, forex, crypto</li>
+        <li><a href="https://commodity.worldmonitor.app/">RAVI Commodity Monitor</a> — mining, energy, supply chains, freight</li>
+        <li><a href="https://happy.worldmonitor.app/">RAVI Happy Monitor</a> — positive news, breakthroughs, conservation</li>
+        <li><a href="https://energy.worldmonitor.app/">RAVI Energy Atlas</a> — oil, gas, chokepoints, energy security</li>
+      </ul>
+
+      <h2>Learn more</h2>
+      <ul>
+        <li><a href="https://www.worldmonitor.app/pro">Pro Features</a> — AI analyst, personalized digests, MCP for Claude &amp; GPT</li>
+        <li><a href="https://www.worldmonitor.app/blog/">Blog</a> — OSINT guides, geopolitics, market intelligence</li>
+        <li><a href="https://github.com/koala73/worldmonitor">Upstream open source on GitHub (AGPL-3.0)</a></li>
+      </ul>
+    </div>
+    <!--
+      A11y hardening for the seo-prerender block above. Runs synchronously
+      RIGHT AFTER the div is parsed (before any subsequent content paints or
+      Tab traversal can reach the links). For JS-enabled users — including
+      JS-aware screen readers and keyboard users — the block is removed from
+      the accessibility tree (aria-hidden) and the focus order (inert). For
+      crawlers (typically no JS), the attributes are never applied, so the
+      content stays indexable and the links stay countable for AEO.
+    -->
+    <script>(function(){try{var s=document.getElementById('seo-prerender');if(s){s.setAttribute('aria-hidden','true');s.setAttribute('inert','')}}catch(e){}})()</script>
+    <div id="app">
+      <!-- Pre-render skeleton: visible instantly, replaced when JS calls renderLayout() -->
+      <div class="skeleton-shell" aria-busy="true" aria-label="RAVI MONITOR dashboard loading">
+        <div class="skeleton-header">
+          <div class="skeleton-header-left">
+            <div class="skeleton-brand"><span class="skeleton-brand-mark" aria-hidden="true">RM</span><span>RAVI MONITOR</span></div>
+            <span class="skeleton-kicker">Dashboard shell loading</span>
+            <span class="skeleton-dot" aria-hidden="true"></span>
+          </div>
+          <div class="skeleton-header-right">
+            <span class="skeleton-chip">Global</span>
+            <span class="skeleton-chip live">Live</span>
+            <span class="skeleton-chip">Loading</span>
+          </div>
+        </div>
+        <div class="skeleton-tabs" aria-hidden="true"></div>
+        <div class="skeleton-main">
+          <div class="skeleton-map">
+            <div class="skeleton-map-bar">
+              <span class="skeleton-section-label">Dashboard</span>
+              <span class="skeleton-section-note">Preparing map and panels</span>
+            </div>
+            <div class="skeleton-map-body">
+              <div class="skeleton-map-content">
+                <p class="skeleton-map-eyebrow">Preparing dashboard</p>
+                <h2 class="skeleton-map-title skeleton-lcp-copy" data-shell-lcp>Dashboard is loading</h2>
+                <p class="skeleton-map-copy">Map layers, panels, alerts, and analysis will appear here as soon as the app finishes loading.</p>
+                <div class="skeleton-map-badges">
+                  <span class="skeleton-chip">Map</span>
+                  <span class="skeleton-chip">Panels</span>
+                  <span class="skeleton-chip">Alerts</span>
+                  <span class="skeleton-chip">Analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skeleton-grid">
+            <section class="skeleton-panel" aria-label="Primary view loading"><div class="skeleton-panel-header"><h3 class="skeleton-panel-title">Primary View</h3></div><div class="skeleton-panel-body"><p class="skeleton-panel-kicker">Preparing workspace</p><p class="skeleton-panel-copy">The live workspace is reserving space for the map, panels, and current signals.</p><div aria-hidden="true" class="skeleton-line w75"></div><div aria-hidden="true" class="skeleton-line w50"></div></div></section>
+            <section class="skeleton-panel" aria-label="Map layers loading"><div class="skeleton-panel-header"><h3 class="skeleton-panel-title">Map Layers</h3></div><div class="skeleton-panel-body"><p class="skeleton-panel-kicker">Preparing overlays</p><p class="skeleton-panel-copy">Geographic overlays and layer controls will hydrate into this reserved area.</p><div aria-hidden="true" class="skeleton-line w75"></div><div aria-hidden="true" class="skeleton-line w60"></div><div aria-hidden="true" class="skeleton-line w40"></div></div></section>
+            <section class="skeleton-panel" aria-label="Signal panels loading"><div class="skeleton-panel-header"><h3 class="skeleton-panel-title">Signal Panels</h3></div><div class="skeleton-panel-body"><p class="skeleton-panel-kicker">Preparing data</p><p class="skeleton-panel-copy">Panel data and summaries will populate after the dashboard bundle starts.</p><div aria-hidden="true" class="skeleton-line"></div><div aria-hidden="true" class="skeleton-line w60"></div><div aria-hidden="true" class="skeleton-line w85"></div></div></section>
+            <section class="skeleton-panel" aria-label="Context loading"><div class="skeleton-panel-header"><h3 class="skeleton-panel-title">Context</h3></div><div class="skeleton-panel-body"><p class="skeleton-panel-kicker">Preparing context</p><p class="skeleton-panel-copy">Supporting context cards keep their final dashboard slots stable.</p><div aria-hidden="true" class="skeleton-line w60"></div><div aria-hidden="true" class="skeleton-line w85"></div><div aria-hidden="true" class="skeleton-line w75"></div></div></section>
+            <section class="skeleton-panel" aria-label="Analysis loading"><div class="skeleton-panel-header"><h3 class="skeleton-panel-title">Analysis</h3></div><div class="skeleton-panel-body"><p class="skeleton-panel-kicker">Preparing analysis</p><p class="skeleton-panel-copy">Analysis modules will appear after data and settings are ready.</p><div aria-hidden="true" class="skeleton-line w85"></div><div aria-hidden="true" class="skeleton-line w50"></div><div aria-hidden="true" class="skeleton-line w75"></div></div></section>
+            <section class="skeleton-panel" aria-label="Updates loading"><div class="skeleton-panel-header"><h3 class="skeleton-panel-title">Updates</h3></div><div class="skeleton-panel-body"><p class="skeleton-panel-kicker">Preparing updates</p><p class="skeleton-panel-copy">Recent updates and refresh state will replace this placeholder.</p><div aria-hidden="true" class="skeleton-line w75"></div><div aria-hidden="true" class="skeleton-line w60"></div><div aria-hidden="true" class="skeleton-line"></div></div></section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside id="country-deep-dive-panel" class="country-deep-dive" aria-label="Country Intelligence" aria-hidden="true">
+      <div class="country-deep-dive-shell">
+        <button id="deep-dive-close" class="panel-close" aria-label="Close">×</button>
+        <div id="deep-dive-content" class="panel-content"></div>
+      </div>
+    </aside>
+    <noscript>
+      <div style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;color:#e5e5e5;background:#0a0a0a;">
+        <h2>RAVI MONITOR — Real-Time Global Intelligence Dashboard</h2>
+        <p>AI-powered real-time global intelligence dashboard with live news, markets, military tracking, infrastructure monitoring, and geopolitical data. Derived from World Monitor by Elie Habib.</p>
+
+        <p>The platform combines real-time conflict events from <a href="https://acleddata.com/" style="color:#4ade80;" rel="noopener noreferrer">ACLED</a> and <a href="https://ucdp.uu.se/" style="color:#4ade80;" rel="noopener noreferrer">UCDP</a>, satellite fire detection from <a href="https://firms.modaps.eosdis.nasa.gov/" style="color:#4ade80;" rel="noopener noreferrer">NASA FIRMS</a>, earthquakes from <a href="https://earthquake.usgs.gov/" style="color:#4ade80;" rel="noopener noreferrer">USGS</a>, aircraft tracking from <a href="https://opensky-network.org/" style="color:#4ade80;" rel="noopener noreferrer">OpenSky</a>, ship AIS from <a href="https://aisstream.io/" style="color:#4ade80;" rel="noopener noreferrer">AISStream</a>, and macro data from <a href="https://fred.stlouisfed.org/" style="color:#4ade80;" rel="noopener noreferrer">FRED</a>, <a href="https://www.imf.org/en/Data" style="color:#4ade80;" rel="noopener noreferrer">IMF</a>, and <a href="https://www.bis.org/" style="color:#4ade80;" rel="noopener noreferrer">BIS</a>.</p>
+
+        <h3>Six dashboards, one platform</h3>
+        <p>Explore the variant that matches what you track: <a href="https://www.worldmonitor.app/dashboard" style="color:#4ade80;">RAVI MONITOR</a> for geopolitics and conflicts, <a href="https://tech.worldmonitor.app/" style="color:#4ade80;">RAVI Tech Monitor</a> for AI labs and startups, <a href="https://finance.worldmonitor.app/" style="color:#4ade80;">RAVI Finance Monitor</a> for markets and central banks, <a href="https://commodity.worldmonitor.app/" style="color:#4ade80;">RAVI Commodity Monitor</a> for mining and supply chains, <a href="https://happy.worldmonitor.app/" style="color:#4ade80;">RAVI Happy Monitor</a> for positive news and progress, and <a href="https://energy.worldmonitor.app/" style="color:#4ade80;">RAVI Energy Atlas</a> for oil, gas, chokepoints, and energy security.</p>
+
+        <h3>Read more</h3>
+        <p>Full upstream source on <a href="https://github.com/koala73/worldmonitor" style="color:#4ade80;" rel="noopener noreferrer">GitHub (AGPL-3.0)</a>.</p>
+      </div>
+    </noscript>
+    <!-- Force-clear stale service worker if module scripts 404 (post-deploy cache mismatch) -->
+    <script>
+    (function(){
+      if(!('serviceWorker' in navigator))return;
+      var key='wm-sw-nuke';
+      var attempted=false;
+      try{if(sessionStorage.getItem(key))return}catch(e){}
+      window.addEventListener('error',function(e){
+        var u=e.target&&(e.target.src||e.target.href)||'';
+        if(u&&/\/assets\//.test(u)){
+          try{sessionStorage.setItem(key,'1')}catch(err){if(attempted)return;attempted=true}
+          navigator.serviceWorker.getRegistrations().then(function(regs){
+            var p=regs.map(function(r){return r.unregister()});
+            Promise.all(p).then(function(){
+              if(caches&&caches.keys){
+                caches.keys().then(function(ks){
+                  return Promise.all(ks.map(function(k){return caches.delete(k)}));
+                }).then(function(){location.reload()});
+              }else{location.reload()}
+            });
+          });
+        }
+      },true);
+    })()
+    </script>
+    <script type="module" src="/src/main.ts" nonce="wm-static-bootstrap"></script>
+  </body>
+</html>
